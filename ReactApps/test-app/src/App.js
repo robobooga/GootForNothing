@@ -19,16 +19,15 @@ class App extends Component {
       {
         id: 3,
         title: 'Third status',
-        completed: false
-      },
+        completed: true
+      }
     ]
   }
 
   render() {
-    console.log(this.state.todo)
     return (
       <div className="App">
-        <Todo />
+        <Todo todo1 = {this.state.todo} />
       </div>
     );
   }
